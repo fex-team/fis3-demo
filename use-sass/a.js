@@ -1,0 +1,1 @@
+var scssStr = __inline('./a.scss');
