@@ -13,7 +13,7 @@ fis.match('::packager', {
     // npm install [-g] fis3-postpackager-loader
     // 分析 __RESOURCE_MAP__ 结构，来解决资源加载问题
     postpackager: fis.plugin('loader', {
-        resourceType: 'mod',
+        resourceType: 'commonJs',
         useInlineMap: true // 资源映射表内嵌
     })
 })
