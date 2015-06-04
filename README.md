@@ -8,3 +8,12 @@
 - [js-compress](js-compress) js 压缩
 - [css-compress](css-compress) css 压缩
 - [html-compress](html-compress) html 压缩
+- [use-amd](use-amd) `AMD` 模块化方案
+- [use-mod.js](use-mod.js) `mod.js` 模块化方案
+
+### 高级话题
+
+- [advanced-dev-plugin](advanced-dev-plugin) 插件开发
+- [backend-resource-manage](backend-resource-manage) 后端静态资源管理方案
+- [customize-resource-map-struct](customize-resource-map-struct) 自定义静态资源映射表结构
+
