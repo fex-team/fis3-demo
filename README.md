@@ -11,7 +11,7 @@
 - [use-amd](use-amd) `AMD` 模块化方案
 - [use-mod.js](use-mod.js) `mod.js` 模块化方案
 
-### 高级话题
+### 进阶技能
 
 - [advanced-dev-plugin](advanced-dev-plugin) 插件开发
 - [backend-resource-manage](backend-resource-manage) 后端静态资源管理方案
