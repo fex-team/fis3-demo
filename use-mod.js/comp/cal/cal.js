@@ -1,4 +1,4 @@
-// @require /static/require.js
+// @require /static/mod.js
 
 exports.add = function (a, b) {
     return a + b;
