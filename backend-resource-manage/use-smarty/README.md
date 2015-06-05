@@ -97,14 +97,46 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
         <div>{title}</div>
         ```
 
-- 其次实现查表功能
+- 其次实现查表功能 & Smarty widget 插件
 
     具体实现就比较简单了，读这张表数据（可以产出到某个 php、json），读到对应的 id 的 uri 用来做模板渲染，而依赖记录下来，后续页面全部渲染完了，嵌入到给浏览器返回的 html 中。
 
     具体实现代码
 
+    - 插件实现就不是本文关注的重点了，可参考 Smarty 官网
     - 获取模板路径 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/compiler.widget.php#L55 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/FISResource.class.php#L104
     - load 依赖的资源 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/compiler.widget.php#L70 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/FISResource.class.php#L334
 
 
+### 提供其他一些辅助开发的接口
 
+为了方便开发，充分运用 Smarty 的能力，我们还可以加一些接口；
+
+- `{require name="<ID>"}`
+
+    依赖标注的时候，上面提到了统一的注释语法
+
+    ```html
+    <!-- @require ./a.js -->
+    <!-- @require ./b.js -->
+    ```
+
+    其实想想它只是做标注，而且是静态依赖，编译过后在模板的 `deps` 里面，运行时加载过去。但可能这样的方式还可以进行扩展，除了这个我们在模板里面也可以实现类似的功能。比如
+
+    ```smarty
+    {require name="a.js"}
+    {require name="b.js"}
+    ```
+    
+    其**不是为了添加到依赖树里面**，而是运行时依赖这个资源，这样的一个好处就在于，我们可以做这样的事情，而通过标记依赖是搞不定的。
+
+    ```smarty
+    {if $user.id == 1}
+        {require name="a.js"}
+    {else}
+        {require name="b.js"}
+    {/if}
+    ```
+
+    可以做到按需加载资源；
+- `{uri name="<ID>"}`
