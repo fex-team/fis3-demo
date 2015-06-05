@@ -139,4 +139,17 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
     ```
 
     可以做到按需加载资源；
+
 - `{uri name="<ID>"}`
+
+    其实有的时候你需要知道某一个资源的具体 url，因为 url 有可能在源码 subpath 的基础上做改动，加 md5 等；这个好比是 Smarty 版本的 `uri` 能力。
+
+有了这几个 Smarty 插件，在开发中就方便许多了。
+
+之所以还有个 Smarty 版本的 require、uri 是可以借助后端能力方便搞定一些动态运行的事情。
+
+```smarty
+{foreach $ids as $id}
+    {require name="`$id`"}
+{/foreach}
+```
