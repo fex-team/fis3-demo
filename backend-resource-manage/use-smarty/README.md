@@ -79,3 +79,32 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
 那么我们这种方式如何加载呢，上面我们得到了模板依赖树的一张表；我们可以通过**前端**解析这张表去加载资源也可以**后端**解析这张表加载资源；
 
 这块我们选择**后端**解析这张表去做加载；
+
+### Smarty 模块化拆分
+
+为了支持 Smarty 模板的拆分，以及达到当 load 这个拆分组件的时候，能以它为**入口**去把这个组件的**依赖也加载过来**。需要用 Smarty 插件的形式实现一些挂起组件模板另外还触发**查表** 的功能。
+
+- 首先定义使用语法
+    
+    ```smarty
+    {widget name="widget/header.tpl" title=`$global.title`}
+    ```
+
+    - `name` 属性 值为静态资源映射表里面的一个 `res` 的 id，当 widget 插件被调用的时候去读这个值，到**表**里面查到具体需要 `fetch` 的模板路径。
+    - 其他属性作为局部变量，其内部无法修改外部 global 的数据，比如上面的 `title` 属性，就可以在 `header.tpl` 里面按照如下使用方式获取到 `title`
+
+        ```smarty
+        <div>{title}</div>
+        ```
+
+- 其次实现查表功能
+
+    具体实现就比较简单了，读这张表数据（可以产出到某个 php、json），读到对应的 id 的 uri 用来做模板渲染，而依赖记录下来，后续页面全部渲染完了，嵌入到给浏览器返回的 html 中。
+
+    具体实现代码
+
+    - 获取模板路径 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/compiler.widget.php#L55 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/FISResource.class.php#L104
+    - load 依赖的资源 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/compiler.widget.php#L70 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/FISResource.class.php#L334
+
+
+
