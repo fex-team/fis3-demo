@@ -1,0 +1,6 @@
+[submodule "backend-resource-manage/use-smarty/plugin"]
+	path = backend-resource-manage/use-smarty/plugin
+	url = git@github.com:fex-team/fis-plus-smarty-plugin.git
+[submodule "backend-resource-manage/use-smarty/smarty"]
+	path = backend-resource-manage/use-smarty/smarty
+	url = git@github.com:fis-dev/smarty.git

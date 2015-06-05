@@ -2,6 +2,18 @@
 
 Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正和后端分离是不需要有后端支持就能用插件的方式解决静态资源管理这个事情；
 
+### 执行尝试
+
+```bash
+# 肯定先下载demo的代码，并且进入这个文件夹下 use-smarty
+# 下面这两个是下载 smarty 和 smarty 的 plugin
+git submodule init
+git submodule update
+fis3 release -d output
+cd output
+php -S 127.0.0.1:8080 index.php
+# 打开浏览器访问 URL：http://127.0.0.1:8080
+```
 
 ### 历史回顾
 
@@ -80,7 +92,7 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
 
 这块我们选择**后端**解析这张表去做加载；
 
-### Smarty 模块化拆分
+#### Smarty 模块化拆分
 
 为了支持 Smarty 模板的拆分，以及达到当 load 这个拆分组件的时候，能以它为**入口**去把这个组件的**依赖也加载过来**。需要用 Smarty 插件的形式实现一些挂起组件模板另外还触发**查表** 的功能。
 
@@ -108,7 +120,7 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
     - load 依赖的资源 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/compiler.widget.php#L70 https://github.com/fex-team/fis-plus-smarty-plugin/blob/master/FISResource.class.php#L334
 
 
-### 提供其他一些辅助开发的接口
+#### 提供其他一些辅助开发的接口
 
 为了方便开发，充分运用 Smarty 的能力，我们还可以加一些接口；
 
@@ -153,3 +165,9 @@ Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正�
     {require name="`$id`"}
 {/foreach}
 ```
+
+#### 能够解析 Smarty 模板的程序
+
+Smarty 也拆分了，资源加载的方法也有了，那么需要实现一个能解析 Smarty 的脚本了，嗯，对 PHP 脚本就行。
+
+这个脚本就比较简单了，直接阅览代码 [index.php](index.php)
