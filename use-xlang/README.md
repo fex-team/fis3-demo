@@ -1,6 +1,6 @@
 ## use xlang
 
-xlang 提供一种 html中使用内嵌异构语言的一种方式。
+xlang 提供一种 html 中内嵌异构语言的一种能力。
 
 比如使用 less.
 
