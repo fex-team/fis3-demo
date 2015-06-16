@@ -5,10 +5,10 @@ fis.match('_*.*', {
 
 // npm install -g fis-parser-sass
 fis.match('**/*.scss', {
-    rExt: '.css', // from .scss to .css
-    parser: fis.plugin('sass', {
-        // fis-parser-sass option
-    })
+  rExt: '.css', // from .scss to .css
+  parser: fis.plugin('sass', {
+    // fis-parser-sass option
+  })
 });
 
 // 所有文件下面当内嵌 scss 内容时。
@@ -16,10 +16,11 @@ fis.match('**/*.scss', {
 // 参考 index.html 中第 7 行。
 fis.match('*:scss', {
   parser: fis.plugin('sass', {
-      // fis-parser-sass option
+    // fis-parser-sass option
   })
 });
 
+// 当文件中，内嵌 coffee script 时，使用 coffee-script 进行内容 parse.
 fis.match('*:coffee', {
   parser: fis.plugin('coffee-script')
 });
