@@ -1,0 +1,7 @@
+# ignore output folder
+output
+
+# ignore node_moduels
+node_modules
+
+.DS_Store
