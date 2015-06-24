@@ -16,7 +16,7 @@
 
 - [use-reactjs](use-reactjs) doing
 - [use-angularjs](use-angularjs) doing
-- [use-vuejs](use-vuejs) doing
+- [use-vuejs](use-vuejs) 组件开发、模块化
 - [advanced-dev-plugin](advanced-dev-plugin) 插件开发
 - [backend-resource-manage](backend-resource-manage) 后端静态资源管理方案
 - [customize-resource-map-struct](customize-resource-map-struct) 自定义静态资源映射表结构
