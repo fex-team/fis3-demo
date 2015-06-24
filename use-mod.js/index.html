@@ -6,8 +6,20 @@
 </head>
 <body>
     <p> Hello, World. </p>
+    <button id="btn">load async js</button>
     <script type="text/javascript">
     require('./comp/1-0/1-0.js');
+
+    var btn = document.getElementById('btn');
+    var handler = function() {
+      require(['./comp/2-0/2-0.js']);
+    };
+
+    if (btn.addEventListener) {
+      btn.addEventListener('click', handler);
+    } else {
+      btn.attachEvent('click', handler);
+    }
     </script>
 </body>
 </html>
