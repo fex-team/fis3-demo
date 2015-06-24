@@ -22,7 +22,7 @@ npm install [-g] fis3-hook-module
 npm install [-g] fis3-postpackager-loader
 
 #编译预览
-cd fis-vuejs-seed/app
+cd fis-vuejs-seed
 fis3 release
 fis3 server start --type node
 
@@ -44,7 +44,7 @@ FIS基础的压缩、打包、md5、加cdn域名、csssprite、文件监听、�
 开发目录结构如下所示：
 
 ```
-app
+project
   ├─ component_modules   (社区模块)  
   ├─ components    (工程模块)
   │  ├─ directive  (指令)
