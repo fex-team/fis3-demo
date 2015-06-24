@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>jQuery ui demo</title>
+    <!--
+    jquery-ui 在 components 目录下，通过模块名字可以直接引用。
+    -->
+    <link rel="stylesheet" type="text/css" href="jquery-ui/themes/base/core.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui/themes/base/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui/themes/base/datepicker.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-ui/themes/base/theme.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+</head>
+<body>
+<div class="container">
+    <h1>jQuery UI Demo</h1>
+
+    <!-- Tabs are initially invisible, until the jQuery UI widget
+         instantiates itself. -->
+    <div id="tabs" class="invisible">
+        <ul>
+            <li><a href="#tabs1">Intro</a></li>
+            <li><a href="./tabs.html">Date Picker</a></li>
+        </ul>
+        <div id="tabs1">
+            <p>This is an example of using the <a href="http://wiki.commonjs.org/wiki/Modules/AsynchronousDefinition" target="_blank">AMD API proposal</a> for formatting jQuery UI files as modules that express their dependencies.</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./mod.js"></script>
+<script type="text/javascript">
+    var $ = require('jquery');
+    require('jquery-ui/tabs');
+
+    // components 下面的 js 可以直接通过模块名字引用。
+    // 创建 tabs
+    $('#tabs')
+        .tabs({
+            load: function (event, ui) {
+                // 当第二个 tab 加载完成后，动态初始化日历控件
+                if (ui.tab.index() === 1) {
+
+                    require(['jquery-ui/datepicker', 'jquery-ui/i18n/datepicker-zh-CN'],
+                        function () {
+                            $('#datepicker').datepicker();
+                        }
+                    );
+                }
+            }
+        })
+        // Make the tabs visible now that the widget has been instantiated.
+        .removeClass('invisible');
+</script>
+
+</body>
+</html>
