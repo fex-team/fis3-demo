@@ -1,4 +1,4 @@
-Components Demo
+Components Demo AMD Version
 =======================================
 
 此 demo 演示了，在 fis3 中如何去使用 [fis-components](https://github.com/fis-components/components)。
