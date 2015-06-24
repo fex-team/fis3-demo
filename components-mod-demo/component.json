@@ -1,0 +1,10 @@
+{
+  "protocol": "github",
+  "gihub": {
+    "author": "fis-components"
+  },
+  "dependencies": [
+    "jquery@^1.9.1",
+    "jquery-ui"
+  ]
+}
