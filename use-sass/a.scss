@@ -5,3 +5,7 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
 }
+
+.inline-demo {
+  background: url('./a.png?__inline');
+}
