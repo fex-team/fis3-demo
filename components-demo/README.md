@@ -13,7 +13,7 @@ Components Demo
 ## 2. 安装 components
 
 ```bash
-fis3 install
+$ fis3 install
 
 Installed
 ├── github:fis-components/jquery@1.9.1
@@ -23,10 +23,12 @@ Installed
 ## 3. 编译产出 & 预览
 
 ```bash
-fis3 release -d ./output
-fis3 server start --root ./output
+$ fis3 release -d ./output
+$ fis3 server start --root ./output
 ```
 
 ## 生成产品代码
 
-fis3 release prod -d ./output
+```bash
+$ fis3 release prod -d ./output
+```
