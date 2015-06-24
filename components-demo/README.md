@@ -14,6 +14,10 @@ Components Demo
 
 ```bash
 fis3 install
+
+Installed
+├── github:fis-components/jquery@1.9.1
+└── github:fis-components/jquery-ui@1.11.2
 ```
 
 ## 3. 编译产出 & 预览
