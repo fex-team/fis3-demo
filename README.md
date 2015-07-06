@@ -14,7 +14,7 @@
 
 ### 进阶技能
 
-- [use-reactjs](use-reactjs) doing
+- [use-reactjs](use-reactjs) react + es6 的使用，模块化用 [mod.js](https://github.com/fex-team/mod)
 - [use-angularjs](use-angularjs) 模块化、自动注解、模板嵌入等
 - [use-vuejs](use-vuejs) 组件开发、模块化
 - [advanced-dev-plugin](advanced-dev-plugin) 插件开发
