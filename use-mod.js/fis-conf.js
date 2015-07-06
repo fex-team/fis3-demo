@@ -9,7 +9,7 @@ fis.match('/comp/**/*.js', {
     release: '/static/$0'
 });
 
-fis.match('::packager', {
+fis.match('::package', {
     // npm install [-g] fis3-postpackager-loader
     // 分析 __RESOURCE_MAP__ 结构，来解决资源加载问题
     postpackager: fis.plugin('loader', {
