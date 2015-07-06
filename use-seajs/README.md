@@ -17,6 +17,13 @@ $ npm install [-g] fis3-hook-module
 $ npm instlal [-g] fis3-postpackager-loader
 ```
 
+## 编译 & 预览
+
+```bash
+$ fis3 release
+$ fis3 server start
+```
+
 ## 产出产品代码
 
 ```bash
