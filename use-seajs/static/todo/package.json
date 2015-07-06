@@ -1,0 +1,14 @@
+{
+  "family": "examples",
+  "name": "todo",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "$": "$",
+      "underscore": "underscore",
+      "backbone": "backbone"
+    },
+    "output": ["main.js", "base.css", "bg.png"]
+  }
+}

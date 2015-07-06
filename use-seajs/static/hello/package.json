@@ -1,0 +1,12 @@
+{
+  "family": "examples",
+  "name": "hello",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery"
+    },
+    "output": ["main.js", "style.css"]
+  }
+}

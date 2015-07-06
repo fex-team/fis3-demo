@@ -1,0 +1,13 @@
+{
+  "family": "examples",
+  "name": "lucky",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "jquery": "jquery",
+      "jquery-easing": "jquery-easing"
+    },
+    "output": ["main.js", "style.css"]
+  }
+}

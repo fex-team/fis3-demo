@@ -1,0 +1,14 @@
+{
+  "family": "examples",
+  "name": "ng-todo",
+  "version": "1.0.0",
+
+  "spm": {
+    "alias": {
+      "$": "$",
+      "store": "store",
+      "angularjs": "angularjs"
+    },
+    "output": ["main.js", "base.css", "bg.png"]
+  }
+}
