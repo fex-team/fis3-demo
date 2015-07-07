@@ -6,15 +6,17 @@ http://seajs.org
 
 ### 注意
 
-- 文件 md5 戳功能
+- 支持文件 md5 戳功能
 - 支持 all in one 打包。但是：不支持部分打包！！
 
 ## 插件安装
 
+插件支持本地安装。如需本地安装，去掉下面的 `-g` 参数
+
 ```bash
 $ npm instll fis3 -g
-$ npm install [-g] fis3-hook-module
-$ npm instlal [-g] fis3-postpackager-loader
+$ npm install fis3-hook-module -g
+$ npm instlal fis3-postpackager-loader -g
 ```
 
 ## 编译 & 预览
