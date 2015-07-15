@@ -1,7 +1,8 @@
 
 // npm install [-g] fis3-hook-module
 fis.hook('module', {
-    mode: 'amd'
+    mode: 'amd',
+    forwardDeclaration: true
 });
 
 fis.match('/comp/**/*.js', {
