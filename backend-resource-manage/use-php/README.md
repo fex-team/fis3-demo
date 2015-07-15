@@ -19,7 +19,7 @@
 npm install -g  fis3 
 
 #安装模块化编译插件
-cd fis3-php
+cd use-php
 npm install 
 
 #编译
