@@ -43,18 +43,23 @@ fis3 server start
 ### 如何做
 
 **后端如何管理资源信息**
+
 FIS静态资源管理的核心是map表(文件中带`__RESOURCE_MAP__`标记的会自动替换成map表)，里面记录了资源的请求地址、依赖等关键信息，可以根据项目需求添加更多的信息到其中。无论是哪种后端资源管理方案，都是通过读取map表来管理资源。所以本方案通过在`Resource.class.php`中读取map.json文件来分析资源信息。
 
 **如何支持CommonJS/AMD模块化方案**
+
 模块化方案我们选取的是commonjs的modjs方案，因为使用上更加简单。当然支持AMD也很方便，默认编译插件fis-hook-module已支持amd的编译。但需要`Resource.class.php`在页面中输出资源依赖配置时修改成amd的方式，您可以在另一个[laravel解决方案](https://github.com/fex-team/laravel-fis/tree/master)中学习如何生成amd的配置。
 
 **如何进行组件化开发**
+
 组件化开启了同名依赖，widget里面的组件中，php文件同名的js和css都将标记依赖，加载此widget时对应的资源和依赖都将自动加载。
 
 **如何控制资源输出位置**
+
 css和js的输出采用了标记位来控制，在最终渲染时替换标记位输出静态资源
 
 **其他说明**
+
 文件的合并、压缩、MD5等配置请参照FIS3文档，本方案仅展示php的静态资源管理，不做详细说明。
 
 
