@@ -53,11 +53,13 @@
   <?php widget("widget/footer/footer.php"); ?>
   
 
-  <!-- 收集style片段以便在顶部输出 -->
+  <!-- 收集style片段以便在顶部输出,style标签可选 -->
   <?php styleStart() ?>
+  <style type="text/css"> 
     footer{
        margin: *;
     }
+  </style>
   <?php styleEnd() ?> 
 
   <!-- 收集script片段并分析其依赖。

@@ -438,7 +438,10 @@ function styleStart() {
 
 function styleEnd() {
     $style = ob_get_clean();
-    if ($style) {
+    $reg = "/(<style(?:\s+[\s\S]*?[\"'\s\w\/]>|\s*>))([\s\S]*?)(?=<\/style>|$)/i";
+    if(preg_match($reg,$style,$matches)){
+        FISResource::addStylePool($matches[2]);
+    }else{
         FISResource::addStylePool($style);
     }
 }

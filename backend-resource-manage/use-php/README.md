@@ -4,7 +4,7 @@
 
 ### 简介
 
-纯php的后端静态资源管理方案，通过与FIS3的结合实现页面组件化、依赖分析与加载、资源收集与自定义渲染等工作。
+纯php的后端静态资源管理方案，通过与FIS3的结合实现页面组件化、依赖分析与加载、资源收集与自定义渲染等工作。适合中小型项目，您也可以通过学习后端资源管理原理开发适合自己模板的方案(已有smarty、laravel blade、java velocity等方案)。
 
 主题使用的是[免费模板](http://all-free-download.com/free-website-templates/notebook_2495.html)。
 
@@ -48,7 +48,7 @@ FIS静态资源管理的核心是map表(文件中带`__RESOURCE_MAP__`标记的�
 
 **如何支持CommonJS/AMD模块化方案**
 
-模块化方案我们选取的是commonjs的modjs方案，因为使用上更加简单。当然支持AMD也很方便，默认编译插件fis-hook-module已支持amd的编译。但需要`Resource.class.php`在页面中输出资源依赖配置时修改成amd的方式，您可以在另一个[laravel解决方案](https://github.com/fex-team/laravel-fis/tree/master)中学习如何生成amd的配置。
+模块化方案我们选取的是commonjs的modjs方案，因为使用上更加简单。当然支持AMD也很方便，默认编译插件fis-hook-module已支持amd的编译。但需要`Resource.class.php`在页面中输出资源依赖配置时修改成amd的方式，您可以在另一个[laravel解决方案](https://github.com/fis-scaffold/laravel)中学习如何生成amd的配置。
 
 **如何进行组件化开发**
 
@@ -88,12 +88,20 @@ css和js的输出采用了标记位来控制，在最终渲染时替换标记位
     <?php placeholder('js'); ?>
    ```
 
- - import(id,[array])
-    加载某个组件和对应的资源，支持传递数据到组件中:
+ - widget(id,[array])
+    加载某个组件和对应的资源，支持传递数据(可选)到组件中:
     
     ```php
     <!-- 加载组件及对应依赖的js和css -->
     <?php widget("widget/footer/footer.php"); ?>
+    ```
+
+ - import(id)
+    同步加载css或js资源
+    
+    ```php
+    <!-- 加载css -->
+    <?php import('static/css/tooplate_style.css'); ?>
     ```
 
  - scriptStart、scriptEnd 
@@ -109,13 +117,15 @@ css和js的输出采用了标记位来控制，在最终渲染时替换标记位
   ```
   
  - styleStart、styleEnd
-    这对函数包裹的内嵌css片段将合并输出到指定位置
+    这对函数包裹的内嵌css片段将合并输出到指定位置，内嵌css <style>标签是可选的
    ```php
    <!-- 收集style片段以便在顶部输出 -->
   <?php styleStart() ?>
-    footer{
-       margin: *;
-    }
+    <style>
+      footer{
+         margin: *;
+      }
+    </style>
   <?php styleEnd() ?> 
    ``` 
 
