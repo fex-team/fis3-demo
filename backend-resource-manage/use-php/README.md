@@ -105,28 +105,31 @@ css和js的输出采用了标记位来控制，在最终渲染时替换标记位
     ```
 
  - scriptStart、scriptEnd 
-   这对函数包裹的内嵌js将合并输出并分析依赖，注意添加script标记
-  ```php
+   这对函数包裹的内嵌js将合并输出并分析依赖，注意添加`<script>`标记
+  
+   ```php
     <?php scriptStart(); ?>
     <script type="text/javascript">
       require.async('widget/scroll/scroll.js',function(scroll){
         scroll.init();
       })  
     </script>
-  <?php scriptEnd(); ?>   
-  ```
+    <?php scriptEnd(); ?>
+
+   ```
   
  - styleStart、styleEnd
-    这对函数包裹的内嵌css片段将合并输出到指定位置，内嵌css <style>标签是可选的
-   ```php
-   <!-- 收集style片段以便在顶部输出 -->
-  <?php styleStart() ?>
-    <style>
-      footer{
-         margin: *;
-      }
-    </style>
-  <?php styleEnd() ?> 
-   ``` 
+    这对函数包裹的内嵌css片段将合并输出到指定位置，内嵌css `<style>`标签是可选的
+
+  ```php
+
+    <?php styleStart() ?>
+      <style>
+        footer{
+           margin: *;
+        }
+      </style>
+    <?php styleEnd() ?>
+    ``` 
 
 可以查看`page/index.php` 文件，里面有详细的使用示例。
