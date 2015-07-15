@@ -18,6 +18,8 @@
 - [use-angularjs](use-angularjs) 模块化、自动注解、模板嵌入、按需加载、异步加载
 - [use-vuejs](use-vuejs) 组件开发、模块化、异步加载
 - [advanced-dev-plugin](advanced-dev-plugin) 插件开发
-- [backend-resource-manage](backend-resource-manage) 后端静态资源管理方案
+- [backend-resource-manage-smarty](backend-resource-manage/use-smarty) 后端smarty静态资源管理方案
+- [backend-resource-manage-php](backend-resource-manage/use-php) 后端纯php静态资源管理方案
+- [backend-resource-manage-laravel](https://github.com/fex-team/laravel-fis/tree/master) 后端laravel静态资源管理方案
 - [customize-resource-map-struct](customize-resource-map-struct) 自定义静态资源映射表结构
 

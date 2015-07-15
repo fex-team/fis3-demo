@@ -1,0 +1,210 @@
+/*
+	Template 2018 Notebook
+    http://www.tooplate.com/view/2018-notebook
+*/
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em; 
+	background-color: #e2d8bd;
+	background-image: url(../images/tooplate_body.jpg);
+	background-repeat: repeat;
+}
+
+a, a:link, a:visited { color: #de6d19; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { margin: 0 0 15px 0; padding: 0; }
+img { border: none; }
+
+h1, h2, h3, h4, h5, h6 { color: #482d12; font-family: Georgia, "Times New Roman", Times, serif; }
+h1 { font-size: 38px; font-weight: normal; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 30px; font-weight: normal; margin: 0 0 30px 0; font-weight: normal; }
+h3 { font-size: 16px; margin: 0 0 15px 0; padding: 0; padding: 0; font-weight: normal;  }
+h4 { font-size: 14px; margin: 0 0 5px 0; padding: 0; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { 
+	display: inline-block; 
+	border: 1px solid #ded6ce; 
+	padding: 4px; 
+	margin-bottom: 10px; 
+}
+
+.image_fl { 
+	float: left; 
+	margin: 3px 30px 0 0; 
+}
+
+.image_fr { 
+	float: right; 
+	margin: 3px 0 0 30px; 
+}
+
+blockquote { font-style: italic; margin: 0 0 0 10px;}
+cite { font-weight: bold; color:#333; }
+cite span { color: #666; }
+em { color: #29b5d3; }
+
+.tooplate_list { 
+	margin: 20px 0 20px 20px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.tooplate_list li { 
+	background: transparent url(../images/tooplate_list.png) no-repeat; 
+	margin:0 0 20px; 
+	padding: 0 0 0 20px; 	
+	line-height: 1em; 
+}
+
+.tooplate_list li a { 
+	color: #fff; 
+}
+
+.tooplate_list li a:hover { 
+	color: #ff4301; 
+}
+
+.btn_more a {
+	display: inline-block;
+	font-weight: bold;
+	color: #000;
+	font-size: 12px;
+	padding: 2px 15px 2px 0;
+	text-decoration: none;
+}
+
+.btn_more a:hover {
+	padding-right: 20px;
+	text-decoration: none;
+}
+
+.col_400 { width: 400px; } 
+.col_300 { width: 300px; }
+.col_280 { width: 280px; }
+
+.service_list { 
+	margin: 0 0 0 15px; 
+	padding: 0; 
+	list-style: none; 
+}
+
+.service_list li { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.service_list li a { 
+	font-size: 16px; 
+	display: block; 
+	height: 25px; 
+	margin-bottom: 20px; 
+	padding-left: 40px; 
+	text-decoration: none; 
+}
+
+.service_list li .service_one { 
+	background: url(../images/onebit_08.png) center left no-repeat; 
+}
+
+.service_list li .service_two { 
+	background: url(../images/onebit_11.png) center left no-repeat; 
+}
+
+.service_list li .service_three { 
+	background: url(../images/onebit_17.png) center left no-repeat; 
+}
+
+.service_list li .service_four { 
+	background: url(../images/onebit_21.png) center left no-repeat; 
+}
+
+.service_list li .service_five { 
+	background: url(../images/onebit_12.png) center left no-repeat; 
+}
+
+#contact_form {  
+	padding: 0; 
+}
+
+#contact_form form { 
+	margin: 0px; 
+	padding: 0px; 
+}
+
+#contact_form form .input_field { 
+	width: 300px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form label { 
+	display: block; 
+	width: 100px; 
+	margin-right: 10px; 
+	font-size: 14px; 
+}
+
+#contact_form form textarea { 
+	width: 368px;  
+	height: 150px; 
+	padding: 5px; 
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf; 
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 12px;
+	margin-top: 5px; 
+}
+
+#contact_form form .submit_btn {
+	margin: 10px 0px;
+	padding: 5px 14px;
+	color: #444;
+	background: #eeeeee; 
+	border: 1px solid #dfdfdf;
+	font-size: 14px;
+}
+
+/* gallery */
+#gallery_container { 
+	clear: both; 
+	margin-top: 30px; 
+	padding-right: 40px; 
+} 
+
+#gallery_container .gallery_box {
+	width: 200px;
+	display: block; 
+	padding: 0;
+	margin: 0 0 40px 0;
+}
+ 
+.gallery_box img {
+	float: left;
+	width: 190px;
+	height: 100px;
+	padding: 4px;
+	border: 1px solid #CCC;
+	margin: 0 30px 0 0;
+}
+/* end of gallery */

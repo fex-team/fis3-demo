@@ -1,0 +1,15 @@
+{
+  "name": "fis3-pure-php",
+  "version": "0.0.1",
+  "description": "fis 3.0 DEMO",
+  "dependencies": {
+    "fis3-hook-modules": "*"
+  },
+  "keywords": [
+    "fis3"
+  ],
+  "author": {
+    "name": "fis"
+  },
+  "license": "BSD"
+}

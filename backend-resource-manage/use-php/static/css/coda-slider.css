@@ -1,0 +1,128 @@
+#slider {
+    position: relative;
+	width: 100%;
+}
+
+#tooplate_wrapper {
+	width: 954px;
+	height: 753px;
+	margin: 50px auto 20px;
+	background: url(../images/tooplate_content_bg.jpg) top left no-repeat;
+}
+
+#tooplate_sidebar {
+	float: left;	
+	width: 296px;
+	padding: 80px 0 0;
+}
+
+#header {
+	width: 224px;
+	padding: 0 36px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+#header h1 { 
+	margin: 0; 
+	padding: 0; 
+	height: 60px; 
+	display: block; 
+	text-indent: - 10000px; 
+}
+
+#menu {
+	width: 236px;
+	padding-left: 60px;
+}
+
+#content {
+	float: right;
+	width: 500px;
+	height: 600px;	
+	padding: 80px 100px 80px 0;
+}
+
+.content_section {
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #ccc
+}
+
+.last_section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+.scroll {
+    height: 640px;
+    width: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+    position: relative;
+    clear: left;
+}
+
+.scrollContainer div.panel {
+    height: 640px;
+    width: 500px;
+	overflow: hidden;
+}
+
+ul.navigation {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul.navigation li {
+    display: inline;
+    margin: 0;
+	padding: 0;
+}
+
+ul.navigation a {
+	display: block;
+	height: 47px;
+	padding: 12px 0 0 20px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 400;
+    text-decoration: none;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.menu_01 { background: url(../images/tooplate_menu_01.png) }
+.menu_02 { background: url(../images/tooplate_menu_02.png) }
+.menu_03 { background: url(../images/tooplate_menu_03.png) }
+.menu_04 { background: url(../images/tooplate_menu_04.png) }
+.menu_05 { background: url(../images/tooplate_menu_05.png) }
+
+ul.navigation a:hover, ul.navigation a.selected {
+	color: #412810;
+}
+
+ul.navigation a:focus {
+    outline: none;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 300px;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+    left: 0
+}
+
+.scrollButtons.right {
+    right: 0
+}
+
+.hide {
+    display: none;
+}

@@ -1,0 +1,29 @@
+#footer {
+    clear: both;
+    width: 900px;
+    padding: 0 27px;
+    margin: 0 auto;
+}
+
+#footer_left { 
+    float: right;
+    width: 300px;
+    text-align: right
+}
+
+#footer a {
+    color: #bbb;
+}
+
+#social_box {
+    float: left;
+    height: 85px;
+    padding: 0;
+    text-align: right;
+}
+
+#social_box a {
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px; height: 60px;
+}
