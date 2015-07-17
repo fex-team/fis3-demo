@@ -23,3 +23,7 @@
 - [backend-resource-manage-laravel](https://github.com/fex-team/laravel-fis/tree/master) 后端laravel静态资源管理方案
 - [customize-resource-map-struct](customize-resource-map-struct) 自定义静态资源映射表结构
 
+
+### 社区DEMO
+
+ - [fis3-vue](https://github.com/okoala/fis3-vue) MVVM 模块化 ES6 Combo 自动化部署 很不错的DEMO
