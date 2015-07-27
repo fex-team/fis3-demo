@@ -14,9 +14,9 @@ http://seajs.org
 插件支持本地安装。如需本地安装，去掉下面的 `-g` 参数
 
 ```bash
-$ npm instll fis3 -g
+$ npm install fis3 -g
 $ npm install fis3-hook-module -g
-$ npm instlal fis3-postpackager-loader -g
+$ npm install fis3-postpackager-loader -g
 ```
 
 ## 编译 & 预览
