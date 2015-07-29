@@ -11,6 +11,7 @@
 - [use-amd](use-amd) `AMD` 模块化方案
 - [use-mod.js](use-mod.js) `mod.js` 模块化方案
 - [use-seajs](use-seajs) `seajs` 模块化方案
+- [use-handlebars-3.x](use-handlebars-3.x) `handlebars-3.x` 编译
 
 ### 进阶技能
 
