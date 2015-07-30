@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "fis 3.0 DEMO",
   "dependencies": {
-    "fis3-hook-modules": "*"
+    "fis3-hook-module": "*"
   },
   "keywords": [
     "fis3"
