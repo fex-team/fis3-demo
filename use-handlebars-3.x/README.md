@@ -1,6 +1,6 @@
 ## use handlebars-3.x
 ```
-npm install -g fis-parser-handlebars-3.x -g
+npm install -g fis-parser-handlebars-3.x
 fis3 release -d ./output
 ```
 ### about plugin
