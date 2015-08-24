@@ -1,5 +1,3 @@
-// @require /static/require.js
-
 var cal = require('../cal/cal.js');
 console.log('work');
 // 1 - 0
