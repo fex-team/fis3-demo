@@ -1,9 +1,6 @@
 
-// npm install [-g] fis3-hook-module
-fis.hook('module', {
-    mode: 'amd',
-    forwardDeclaration: true
-});
+// npm install [-g] fis3-hook-amd
+fis.hook('amd');
 
 fis.match('/comp/**/*.js', {
     isMod: true, // 设置 comp 下都是一些组件，组件建议都是匿名方式 define
