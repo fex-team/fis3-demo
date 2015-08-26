@@ -15,7 +15,7 @@ http://seajs.org
 
 ```bash
 $ npm install fis3 -g
-$ npm install fis3-hook-module -g
+$ npm install fis3-hook-cmd -g
 $ npm install fis3-postpackager-loader -g
 ```
 

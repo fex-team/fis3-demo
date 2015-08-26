@@ -9,12 +9,7 @@ fis.match('/static/sea.js', {
   isMod: false
 });
 
-fis.hook('module', {
-  mode: 'cmd',
-
-  // 记得设置这个。
-  forwardDeclaration: true,
-
+fis.hook('cmd', {
   baseUrl: './sea-modules/',
 
   paths: {
