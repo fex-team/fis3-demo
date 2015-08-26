@@ -1,8 +1,6 @@
 
-// npm install [-g] fis3-hook-module
-fis.hook('module', {
-    mode: 'commonJs'
-});
+// npm install [-g] fis3-hook-commonjs
+fis.hook('commonjs');
 
 fis.match('/comp/**/*.js', {
     isMod: true, // 设置 comp 下都是一些组件，组件建议都是匿名方式 define
