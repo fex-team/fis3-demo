@@ -23,7 +23,7 @@ php -S 127.0.0.1:8080 index.php
 ### 历史回顾
 
 - FIS 2.0 时期支持 Smarty 开发的成套解决方案是 [fis-plus](/fex-team/fis-plus)
-- FIS 3.0 时期支持 Smarty 开发的成套解决方案由 [fis3-smarty](/fex-team/fis3-smarty)
+- FIS 3.0 时期支持 Smarty 开发的成套解决方案由 [fis3-smarty](/fex-team/fis3-smarty) 提供
 
 
 ### 需要做的事情
