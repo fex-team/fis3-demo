@@ -1,0 +1,9 @@
+{
+  "protocol": "github",
+  "gihub": {
+    "author": "fis-components"
+  },
+  "dependencies": [
+    "react"
+  ]
+}

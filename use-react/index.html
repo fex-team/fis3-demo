@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+  <script type="text/javascript" src="./mod.js"></script>
+</head>
+<body>
+<div id="content"></div>
+
+<script type="text/x-jsx">
+var React = require('react');
+
+// tutorial1.js
+var CommentBox = React.createClass({
+  render: function() {
+    return (
+      <div className="commentBox">
+        Hello, world! I am a CommentBox.
+      </div>
+    );
+  }
+});
+React.render(
+  <CommentBox />,
+  document.getElementById('content')
+);
+</script>
+</body>
+</html>
