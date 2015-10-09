@@ -26,7 +26,7 @@ bower install
 fis3 release 
 
 # 预览效果
-fis3 release  start --type node
+fis3 server  start --type node
 
 # 生产环境打包压缩MD5戳等
 fis3 release prod
