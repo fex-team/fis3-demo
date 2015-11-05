@@ -2,7 +2,7 @@
 
 Smarty 模板也是 PHP 写的，但好处是提供了若干插件，当真正和后端分离是不需要有后端支持就能用插件的方式解决静态资源管理这个事情；
 
-说在前面的话，**如果你只是想用成套已经制定好的解决方案，请移步 [fex-team/fis3-smarty](/fex-team/fis3-smarty)，而不需要往下看了**；如果你想了解 Smarty 解决方案是如何工作的，那么下面是一些原理介绍文档，欢迎**继续文档**。
+说在前面的话，**如果你只是想用成套已经制定好的解决方案，请移步 [fex-team/fis3-smarty](https://github.com/fex-team/fis3-smarty)，而不需要往下看了**；如果你想了解 Smarty 解决方案是如何工作的，那么下面是一些原理介绍文档，欢迎**继续文档**。
 
 此 demo 并不是 fis3-smarty 解决方案的 demo，而是为了简单诠释 Smarty 解决方案工作原理而设计的，请勿直接用于生产环境中。
 
@@ -22,8 +22,8 @@ php -S 127.0.0.1:8080 index.php
 
 ### 历史回顾
 
-- FIS 2.0 时期支持 Smarty 开发的成套解决方案是 [fis-plus](/fex-team/fis-plus)
-- FIS 3.0 时期支持 Smarty 开发的成套解决方案由 [fis3-smarty](/fex-team/fis3-smarty) 提供
+- FIS 2.0 时期支持 Smarty 开发的成套解决方案是 [fis-plus](https://github.com/fex-team/fis-plus)
+- FIS 3.0 时期支持 Smarty 开发的成套解决方案由 [fis3-smarty](https://github.com/fex-team/fis3-smarty) 提供
 
 
 ### 需要做的事情
