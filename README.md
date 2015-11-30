@@ -18,6 +18,7 @@
 - [组件生态使用demo mod 版本 (commonjs) 规范](https://github.com/fex-team/fis3-demo/tree/master/components-mod-demo)
 - [组件生态使用demo amd 版本](https://github.com/fex-team/fis3-demo/tree/master/components-amd-demo)
 - [use-reactjs](use-reactjs) react + es6 的使用，模块化用 [mod.js](https://github.com/fex-team/mod)
+- [use-react](use-react) react + es6 的使用，采用 typescript 来编译。
 - [react-redux-todo](https://github.com/fis-scaffold/react-redux-todo) 一个基于 react redux 的 todo demo.
 - [use-angularjs](use-angularjs) 模块化、自动注解、模板嵌入、按需加载、异步加载
 - [angular2 app](https://github.com/fis-scaffold/angular2-app) angular2 的一个简单 app.
