@@ -1,4 +1,5 @@
 var React = require('react');
+var ReactDOM = require('react-dom');
 
 // tutorial1.js
 var CommentBox = React.createClass({
@@ -11,7 +12,7 @@ var CommentBox = React.createClass({
   }
 });
 
-React.render(
+ReactDOM.render(
   <CommentBox />,
   document.getElementById('content')
 );
