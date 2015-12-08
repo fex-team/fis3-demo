@@ -1,6 +1,6 @@
 <div id="tooplate_sidebar">        
     <div id="header">
-        <h1><a href="#"><img src="../static/images/tooplate_logo.png" title="Notebook Template - tooplate.com" alt="Notebook free html template" /></a></h1>
+        <h1><a href="#"><img src="../../../static/images/tooplate_logo.png" title="Notebook Template - tooplate.com" alt="Notebook free html template" /></a></h1>
     </div>    
 
     <div id="menu">
