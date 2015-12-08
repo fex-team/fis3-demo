@@ -4,6 +4,7 @@
     "author": "fis-components"
   },
   "dependencies": [
-    "react"
+    "react",
+    "react-dom"
   ]
 }
