@@ -1,18 +1,18 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React, { Component } from 'react'
+import { render } from 'react-dom'
 
 // tutorial1.js
-var CommentBox = React.createClass({
-  render: function() {
+class CommentBox extends Component {
+  render() {
     return (
       <div className="commentBox">
         Hello, world! I am a CommentBox.
       </div>
-    );
+    )
   }
-});
+}
 
-ReactDOM.render(
+render(
   <CommentBox />,
   document.getElementById('content')
-);
+)

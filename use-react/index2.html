@@ -5,7 +5,26 @@
   <script type="text/javascript" src="./mod.js"></script>
 </head>
 <body>
-<div id="content"></div>
-<script type="text/javascript" src="./app.jsx"></script>
+    <div id="content"></div>
+    <script type="text/x-jsx">
+        import React, { Component } from 'react'
+        import { render } from 'react-dom'
+
+        // tutorial1.js
+        class CommentBox extends Component {
+          render() {
+            return (
+              <div className="commentBox">
+                Hello, world! I am a CommentBox.
+              </div>
+            )
+          }
+        }
+
+        render(
+          <CommentBox />,
+          document.getElementById('content')
+        )
+    </script>
 </body>
 </html>

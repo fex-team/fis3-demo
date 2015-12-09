@@ -10,6 +10,8 @@ fis.match('::package', {
 
 // 编译所有后缀为 jsx 的文件为 js
 fis.match('{*.jsx,*:jsx}', {
-    parser: fis.plugin('babel-5.x'),
+    parser: fis.plugin('babel-5.x', {
+        sourceMaps: true
+    }),
     rExt: '.js'
 });

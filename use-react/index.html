@@ -3,28 +3,9 @@
 <head>
   <title>Test</title>
   <script type="text/javascript" src="./mod.js"></script>
+  <script type="text/javascript" src="./app.jsx"></script>
 </head>
 <body>
-<div id="content"></div>
-
-<script type="text/x-jsx">
-var React = require('react');
-var ReactDOM = require('react-dom');
-
-// tutorial1.js
-var CommentBox = React.createClass({
-  render: function() {
-    return (
-      <div className="commentBox">
-        Hello, world! I am a CommentBox.
-      </div>
-    );
-  }
-});
-ReactDOM.render(
-  <CommentBox />,
-  document.getElementById('content')
-);
-</script>
+    <div id="content"></div>
 </body>
 </html>
