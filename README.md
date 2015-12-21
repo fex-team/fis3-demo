@@ -34,3 +34,4 @@
 ### 社区DEMO
 
  - [fis3-vue](https://github.com/okoala/fis3-vue) MVVM 模块化 ES6 Combo 自动化部署 很不错的DEMO
+ - [fis3-base](https://github.com/yanhaijing/fis3-base) 纯前端方案 ES6 sass 组件化 前端模版 持续维护
