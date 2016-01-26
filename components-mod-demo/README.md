@@ -6,7 +6,7 @@ Components Demo Mod.js version.
 ## 1. 安装以下插件
 全局安装，或者局部安装都可以。
 
-* [fis3-hook-module](https://github.com/fex-team/fis3-hook-module)
+* [fis3-hook-commonjs](https://github.com/fex-team/fis3-hook-commonjs)
 * [fis3-postpackager-loader](https://github.com/fex-team/fis3-postpackager-loader)
 * [fis-optimizer-uglify-js](https://github.com/fex-team/fis-optimizer-uglify-js)
 
