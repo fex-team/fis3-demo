@@ -3,9 +3,7 @@ fis.set('project.files', '*.html');
 
 // npm install [-g] fis3-hook-module
 // 引入模块化开发插件，设置规范为 commonJs 规范。
-fis.hook('module', {
-    mode: 'commonJs'
-});
+fis.hook('commonjs');
 
 // 设置组件库里面的 js 都是模块化 js.
 fis.match('/components/**.js', {
