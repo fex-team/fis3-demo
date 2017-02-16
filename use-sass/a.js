@@ -1,1 +1,2 @@
-var scssStr = __inline('./a.scss');
+var scssStr = __inline('./b.scss');
+console.log(scssStr);
